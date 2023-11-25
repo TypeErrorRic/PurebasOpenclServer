@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  myapp:
+    build: .
+    volumes:
+      - /workspaces/PurebasOpenclServer:/usr/app/opencl/OpenCL-SDK/samples/core
+    ports:
+      - "80:80"
